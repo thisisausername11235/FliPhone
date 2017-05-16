@@ -1,14 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FliPhone" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +20,59 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="   FliPhone" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="KBO-Q7-Y1q">
+                                <rect key="frame" x="88" y="70" width="200" height="60"/>
+                                <color key="backgroundColor" red="0.98431372549019602" green="0.63137254901960782" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="Eau-cl-aFk"/>
+                                    <constraint firstAttribute="width" constant="200" id="xna-tS-WB5"/>
+                                </constraints>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3s3-DX-lVc">
+                                <rect key="frame" x="110" y="299" width="155" height="70"/>
+                                <color key="backgroundColor" red="0.41960784313725491" green="0.72941176470588232" blue="0.65490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="RF4-Tj-aeP"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="155" id="boo-U1-3F8"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="30"/>
+                                <state key="normal" title="    PLAY    ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pp1-nB-NsY">
+                                <rect key="frame" x="112" y="507" width="150" height="45"/>
+                                <color key="backgroundColor" red="0.71372549019607845" green="0.63137254901960782" blue="0.61960784313725492" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="IIV-qv-ino"/>
+                                    <constraint firstAttribute="width" constant="150" id="dPI-bT-VfA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <state key="normal" title="Leaderboards">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.42352941176470588" green="0.39215686274509803" blue="0.54509803921568623" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Pp1-nB-NsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="8kK-lZ-Sqv"/>
+                            <constraint firstItem="KBO-Q7-Y1q" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="98M-xQ-hi0"/>
+                            <constraint firstItem="3s3-DX-lVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="BPV-ia-rlM"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Pp1-nB-NsY" secondAttribute="bottom" constant="115" id="DWa-pc-STE"/>
+                            <constraint firstItem="3s3-DX-lVc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="caA-I9-x4C"/>
+                            <constraint firstItem="Pp1-nB-NsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cdN-ov-IJc"/>
+                            <constraint firstItem="Pp1-nB-NsY" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qyL-aZ-8Ql"/>
+                            <constraint firstItem="KBO-Q7-Y1q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="50" id="v0A-6L-0m0"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="137.18140929535232"/>
         </scene>
     </scenes>
 </document>
